@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.quote {
+  font-size: 1.75em;
+  color: #c3c3c3;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  margin: auto;
+  min-width: 75vw;
+}

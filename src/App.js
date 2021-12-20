@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

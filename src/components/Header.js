@@ -1,22 +1,45 @@
-import React from "react";
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Link,
+  NavLink,
+  Route,
+  Routes,
+} from 'react-router-dom'
 
-import "./Header.css";
+import RandomQuote from './RandomQuote'
+import Pokemon from './Pokemon'
+import './Header.css'
 
 const Header = () => {
   return (
-    <div className="container">
-      <div className="col">
-        <div className="generator-name">
-          Random
-          <br />
-          Pokemon
-          <br />
-          Generator
+    <>
+      <RandomQuote />
+      <Router>
+        <div className='container'>
+          <div className='col even-justify generator-name'>
+            <Link
+              to='/pokemon'
+              style={{ textDecoration: 'none' }}
+              className='link'
+            >
+              Random Pokemon
+            </Link>
+          </div>
+          <div className='col even-justify generator-name'>
+            <Link
+              to='/starwars'
+              style={{ textDecoration: 'none' }}
+              className='link'
+            >
+              Random Star Wars Character
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="col"></div>
-    </div>
-  );
-};
+      </Router>
+      <hr />
+    </>
+  )
+}
 
-export default Header;
+export default Header

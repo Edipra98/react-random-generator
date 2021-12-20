@@ -1,18 +1,31 @@
 .container {
   display: flex;
 }
-
 .col {
   flex-direction: column;
-  outline: 1px solid black;
-  min-height: 20rem;
-  min-width: 20rem;
+  height: auto;
+  max-width: 10em;
+}
+.even-justify {
   margin: auto;
-  margin-top: 2.5rem;
-  align-items: center;
-  text-align: center;
 }
 .generator-name {
-  font-size: 5rem;
+  font-size: 1rem;
+  min-height: 2rem;
   overflow-wrap: break-word;
+  padding: 5px 10px;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  outline: 1px solid rgb(255, 255, 255);
+  border-radius: 1em;
+  margin: auto;
+  vertical-align: middle;
+}
+.link {
+  color: white;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
 }
