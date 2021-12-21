@@ -17,7 +17,7 @@ const Header = () => {
     <>
       <RandomQuote />
       <div className='container'>
-        <div className='col even-justify generator-name'>
+        <div className='col even-justify generator-name pk'>
           <Link
             to='/pokemon'
             style={{ textDecoration: 'none' }}
@@ -26,7 +26,7 @@ const Header = () => {
             Random Pokemon
           </Link>
         </div>
-        <div className='col even-justify generator-name'>
+        <div className='col even-justify generator-name sw'>
           <Link
             to='/starwars'
             style={{ textDecoration: 'none' }}

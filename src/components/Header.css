@@ -7,7 +7,7 @@
   text-align: center;
   background-color: rgb(63, 63, 63);
   color: white;
-  outline: 1px solid rgb(255, 255, 255);
+  outline: 2px solid rgb(255, 255, 255);
   border-radius: 1em;
   margin: auto;
   vertical-align: middle;
@@ -17,4 +17,10 @@
   vertical-align: middle;
   align-items: center;
   text-align: center;
+}
+.sw {
+  font-family: 'distantGalaxy';
+}
+.pk {
+  font-family: 'Press Start 2P', cursive;
 }

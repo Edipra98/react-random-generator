@@ -5,3 +5,9 @@ body {
 html {
   font-size: 15px;
 }
+@font-face {
+  font-family: 'distantGalaxy';
+  src: url('./fonts/webfontkit-20211221-151821/distantGalaxy.woff2')
+      format('woff2'),
+    url('./fonts/webfontkit-20211221-151821/distantGalaxy.woff') format('woff');
+}
