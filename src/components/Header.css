@@ -1,14 +1,3 @@
-.container {
-  display: flex;
-}
-.col {
-  flex-direction: column;
-  height: auto;
-  max-width: 10em;
-}
-.even-justify {
-  margin: auto;
-}
 .generator-name {
   font-size: 1rem;
   min-height: 2rem;

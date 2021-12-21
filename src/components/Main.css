@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+  height: auto;
+  max-width: 10em;
+}
+.even-justify {
+  margin: auto;
+}
+.center {
+  align-items: center;
+}
