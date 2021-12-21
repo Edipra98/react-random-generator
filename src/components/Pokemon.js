@@ -16,7 +16,7 @@ class RandPokemon extends React.Component {
   }
 
   randomPokemon() {
-    const randNum = Math.ceil(Math.random() * 898)
+    const randNum = Math.floor(Math.random() * 898)
     const url = `https://pokeapi.co/api/v2/pokemon/${randNum}`
     fetch(url)
       .then((response) => response.json())
