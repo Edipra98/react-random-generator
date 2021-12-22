@@ -37,10 +37,11 @@ button.starwars {
   color: yellow;
   border: 2px solid yellow;
   border-radius: 0.5rem;
-  background-color: blue;
+  background-color: black;
   font-size: 1.5rem;
   padding: 0.5rem;
   font-family: 'distantGalaxy';
+  margin-bottom: 0.5em;
 }
 .name {
   color: yellow;
@@ -54,15 +55,21 @@ button.starwars {
   font-size: 2rem;
   margin: 1rem;
 }
-.weight {
+.world {
   color: black;
   text-shadow: 0 0 0 black, 0 0 5px yellow;
   font-size: 2rem;
   margin: 1rem;
 }
-.planet {
+.affil {
   color: black;
   text-shadow: 0 0 0 black, 0 0 5px yellow;
   font-size: 2rem;
+  margin: 1rem;
+}
+.affilSmall {
+  color: black;
+  text-shadow: 0 0 0 black, 0 0 5px yellow;
+  font-size: 1.5rem;
   margin: 1rem;
 }

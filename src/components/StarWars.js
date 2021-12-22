@@ -3,47 +3,70 @@ import React from 'react'
 
 import './generators.css'
 
-class RandSW extends React.Component {
+class FilmItemRow extends React.Component {
+  render() {
+    return (
+      <li style={{ listStyleType: 'none' }} className='affilSmall'>
+        {this.props.url}
+      </li>
+    )
+  }
+}
+
+class SW extends React.Component {
   constructor() {
     super()
     this.state = {
       loadedChar: false,
       name: null,
-      weight: 'N/A',
       height: null,
-      birthYear: null,
+      homeworld: null,
+      affiliations: [],
     }
   }
-  randomCharacter() {
-    const randNum = Math.floor(Math.random() * 83)
-    const url = `https://swapi.dev/api/people/${randNum}`
+  getNewChar() {
+    //console.log("Get new character");
+    const rand = Math.ceil(Math.random() * 87)
+    const url = `https://akabab.github.io/starwars-api/api/id/${rand}.json`
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
+        console.log(data.image)
         this.setState({
           loadedChar: true,
           name: data.name,
-          height: data.height / 100,
-          weight: data.mass,
-          birthYear: data.birth_year,
+          height: data.height,
+          homeworld: data.homeworld,
+          affiliations: data.affiliations,
+          image: data.image,
         })
       })
   }
   render() {
+    const affil = this.state.affiliations.map((url, i) => {
+      return <FilmItemRow key={i} url={url} />
+    })
+
     return (
       <div className='generator'>
         <button
-          onClick={() => this.randomCharacter()}
-          className='center starwars'
+          type='button'
+          onClick={() => this.getNewChar()}
+          class='center starwars'
         >
-          Generate Star Wars Character
+          Randomize Character
         </button>
         {this.state.loadedChar && (
           <div>
-            <h2 className='name'>{this.state.name}</h2>
-            <h3 className='height'>Height: {this.state.height} m</h3>
-            <h3 className='weight'>Weight: {this.state.weight} kg</h3>
-            <h3 className='planet'>Birth Year: {this.state.birthYear}</h3>
+            <img src={this.state.image} className='pulledImage' />
+            <h1 className='name'>{this.state.name}</h1>
+            <div className='height'>Height: {this.state.height}m</div>
+            <div className='world'>Homeworld: {this.state.homeworld}</div>
+            <div className='affil'>
+              <u>Affiliations</u>
+            </div>
+            {affil}
           </div>
         )}
       </div>
@@ -54,7 +77,7 @@ class RandSW extends React.Component {
 const StarWars = () => {
   return (
     <div className='container'>
-      <RandSW />
+      <SW />
     </div>
   )
 }

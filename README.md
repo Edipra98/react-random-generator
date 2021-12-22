@@ -5,4 +5,4 @@ This website gives the user to generate a random Pokemon from pokeapi.co or a ra
 ## What it returns
 
 The random generator for the Pokemon returns the Image, Name, Height, and Weight\
-The random generator for the Pokemon returns the Name, Height, Weight, and Homeplanet
+The random generator for the Pokemon returns the Image, Name, Height, Affiliations, and Homeplanet
