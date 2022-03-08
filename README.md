@@ -1,6 +1,6 @@
 # Random Character Generator
 
-This website gives the user to generate a random Pokemon from pokeapi.co or a random Star Wars character from swapi.dev
+This website gives the user to generate a random Pokemon from pokeapi.co or a random Star Wars character from https://akabab.github.io/starwars-api/api
 
 ## What it returns
 
